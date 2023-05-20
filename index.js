@@ -3,13 +3,12 @@
 const wordsArr = ['hay', 'poop', 'frog', 'code', 'banana', 'needle', 'city']
 
 function findNeedle(haystack) {
-  // your code here
     let msg = `found the needle at position `
     let needle = (n) => n === 'needle'
     return msg + haystack.findIndex(needle)
 }
 
-// console.log(findNeedle(wordsArr))
+console.log(findNeedle(wordsArr))
 
 function numReverse(n) {
   return n.toString().split('').reverse().map(Number)
@@ -75,11 +74,13 @@ let decodeMorse = function(morseCode){
 
 // console.log(decodeMorse('--   ---   .--.'))
 
-// reverse chain of numbers and output from highest to lowest
+// reverse a input of numbers and output it in a descending order
 
 function descendingOrder(n){
      return Number(n.toString().split("").sort((a, b) => b - a).join(""))
 }
+
+console.log(descendingOrder(78463919992011))
 
 function highToLow(numbers) {
   // splitting the number chain to an array of numbers
