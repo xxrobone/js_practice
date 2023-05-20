@@ -2,7 +2,8 @@
 
 ## Example 
 
-- ### Q: find needle in a haystack array of words containing word needle
+- ### Q: find the needle in a haystack array of words containing the word needle
+- ### output: fount the needle at position **position of the index**
 
 - test array const wordsArr = ['hay', 'poop', 'frog', 'code', 'banana', 'needle', 'city']
 
