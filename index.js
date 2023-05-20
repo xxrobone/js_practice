@@ -80,7 +80,7 @@ function descendingOrder(n){
      return Number(n.toString().split("").sort((a, b) => b - a).join(""))
 }
 
-console.log(descendingOrder(78463919992011))
+console.log(descendingOrder(1347))
 
 function highToLow(numbers) {
   // splitting the number chain to an array of numbers

@@ -3,7 +3,7 @@
 ## Example 
 
 - ### Q: find the needle in a haystack array of words containing the word needle
-- ### output: fount the needle at position **position of the index**
+- ### expected output: found the needle at position **position of the index**
 
 - test array const wordsArr = ['hay', 'poop', 'frog', 'code', 'banana', 'needle', 'city']
 
@@ -21,12 +21,13 @@ function findNeedle(haystack) {
 answer: 
 
 ```
-99998764321110
+found the needle at position 5
 
 ```
 
 - ### Q: reverse a input of numbers and output it in a descending order
 
+- ### expected output: 7431 from an input of 1347
 
 ### My sollution
 
@@ -39,6 +40,6 @@ function descendingOrder(n){
 answer: 
 
 ```
-found the needle at position 5
+7431
 
 ```
