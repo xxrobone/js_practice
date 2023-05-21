@@ -1,3 +1,47 @@
+// check if a string has the same amount of x's and o's
+function xo(str) {
+  let xs = '';
+  let os = '';
+  str.toLowerCase().split('').map((c) => {
+    if (c === 'o') {
+      os += 'o';
+      console.log(os);
+    } else if (c === 'x') {
+      xs += 'x';
+      console.log(xs);
+    } else {
+      return;
+    }
+  });
+  return xs.length === os.length;
+}
+
+console.log(xo('XoXomd'));
+// return boolean to string
+function returnBoolean(b) {
+  return b === true ? 'true' : 'false';
+}
+
+/// console.log(returnBoolean(true))
+
+// remove all vowels from a string
+// vowels = ['a', 'e', 'i', 'o', 'u']
+function removeVowels(str) {
+  return str.replace(/[aeiou]/g, '');
+}
+
+console.log(removeVowels('You fat bastard'));
+
+// get initails and capitalize the letters from a first last name string
+function getInitials(str) {
+  return Array.from(str.split(' '))
+    .map((e) => e.charAt(0).toUpperCase())
+    .join(' ')
+    .replace(' ', '.');
+}
+
+// console.log(getInitials('Robert Wägar'))
+
 // Number of people on the bus
 let number = function (busStops) {
   // Good Luck!
@@ -35,7 +79,7 @@ function DNAstrand(dna) {
   return swap;
 }
 
-console.log(DNAstrand('TATAZZZGCGC'));
+// console.log(DNAstrand('TATAZZZGCGC'));
 
 // creative hello world
 function greet(str) {
@@ -165,7 +209,7 @@ function descendingOrder(n) {
   );
 }
 
-console.log(descendingOrder(1347));
+// console.log(descendingOrder(1347));
 
 function highToLow(numbers) {
   // splitting the number chain to an array of numbers
@@ -205,8 +249,7 @@ const obj = {
     inner.bind(this)();
   },
 };
-
-obj.getX();
+//  obj.getX();
 
 // abcdddefghi
 
@@ -243,7 +286,7 @@ const getNonCharRepeatingString = (str) => {
   return console.log('this is the longest string: ', longest);
 };
 
-getNonCharRepeatingString('abcdddefghi');
+// getNonCharRepeatingString('abcdddefghi');
 
 // example using var
 var arr = [
